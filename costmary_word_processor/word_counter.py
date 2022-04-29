@@ -5,6 +5,8 @@ for counting words
 
 from bs4 import BeautifulSoup
 
+def add_two_numbers(a, b):
+    return a + b
 
 class WordCounter:
     """
@@ -44,6 +46,7 @@ class WordCounter:
         text_list = [i.text for i in soup.find_all()]
         if len(text_list) != 0:
             self.sentence = " ".join(text_list)
+
 
 
 if __name__ == "__main__":
